@@ -72,7 +72,9 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
+# to use ruby version in the prompt place $(rb_prompt) in the prompt string
+export PROMPT=$'\n%{$fg_no_bold[magenta]%}%D{%a %b %d %I:%M %p} %{$reset_color%}%{$fg_no_bold[green]%}%n@%m%{$reset_color%} in $(directory_name) $(git_dirty)$(need_push)\n› '
+
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
