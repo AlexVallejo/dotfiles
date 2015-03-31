@@ -27,8 +27,8 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Set the dock to a medium size and turn on magnification
-defaults write com.apple.dock tilesize -int 35
-defaults write com.apple.dock largesize -int 40
+defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock largesize -int 35
 defaults write com.apple.dock magnification -bool true
 
 # Run the screensaver if we're in the bottom-left hot corner.
