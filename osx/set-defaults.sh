@@ -43,6 +43,8 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 defaults write com.apple.dock wvous-tr-corner -int 4
 defaults write com.apple.dock wvous-tr-modifier -int 0
 
+# Disable dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # Set up Safari for development.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
