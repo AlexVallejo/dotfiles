@@ -25,4 +25,5 @@ brew 'unrar'
 brew 'wget'
 brew 'youtube-dl'
 
+cask 'flux'
 cask 'sublime-text'
